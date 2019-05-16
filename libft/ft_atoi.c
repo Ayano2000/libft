@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int 	ft_atoi(char *str)
+int 	ft_atoi(const char *str)
 {
 	size_t i;
 	size_t nbr;
@@ -21,5 +21,5 @@ int 	ft_atoi(char *str)
 		nbr = nbr * 10 + str[i] - '0';
 		i++;
 	}
-	return (nbr * neg)
+	return (nbr * neg);
 }

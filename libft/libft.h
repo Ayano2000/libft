@@ -1,0 +1,30 @@
+#ifndef LIBFT_H
+# define LIBFT_H
+# include <string.h>
+
+typedef struct		s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}                   *t_list;
+
+int     ft_stoi(const char *str);
+int     ft_isalpha(int c);
+int     ft_isalnum(int c);
+int     ft_isascii(int c);
+int     ft_isdigit(int c);
+int     ft_isprint(int c);
+char	*ft_strcat(char *str1, const char *str2);
+char    *ft_strchr(const char *str, int to_find);
+int		strcmp(const char *str1, const char *str2);
+char	*ft_strdup(const char *str1);
+size_t		ft_strlen(const char *str);
+int		ft_strncmp(const char *str1, const char *str2, size_t n);
+char	*ft_strncpy(char *dest, const char *src, size_t len);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+char	*ft_strstr(const char *haystack, const char *needle);
+int		ft_tolower(int c);
+int     ft_toupper(int c);
+void    *ft_memset(void *b, int c, size_t len);
+void    ft_bzero(void *s, size_t n);

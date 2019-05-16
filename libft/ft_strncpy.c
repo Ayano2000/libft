@@ -1,6 +1,6 @@
 #include "libft.h"
 
-void	ft_strncpy(char *dst, const char *src, size_t len)
+char	*ft_strncpy(char *dest, const char *src, size_t len)
 {
 	while (src[len] != "\0")
 	{
