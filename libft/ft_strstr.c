@@ -12,7 +12,7 @@ char	*ft_strstr(const char *haystack, const char *needle)
 		while (needle[i] == haystack[i + j])
 		{
 			if (needle[j + 1] == '\0')
-				return (haystack + i);
+				return (needle[i + 1]);
 			j++;
 		}
 		i++;

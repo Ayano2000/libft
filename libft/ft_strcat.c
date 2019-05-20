@@ -15,4 +15,5 @@ char	*ft_strcat(char *str1, const char *str2)
 		i++;
 	}
 	str1[i] = '\0';
+	return (str1);
 }

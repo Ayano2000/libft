@@ -10,5 +10,5 @@
     if (0 == i)
         return (NULL);
     else
-        return ((char *) to_find);
+        return (str);
  }
