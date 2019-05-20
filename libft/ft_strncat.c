@@ -1,18 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/05/20 17:05:21 by ayano             #+#    #+#             */
+/*   Updated: 2019/05/20 17:11:06 by ayano            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-char    *ft_strncat(char *str1, const char *str2, size_t n)
+char	*ft_strncat(char *str1, const char *str2, size_t n)
 {
-    size_t i;
-    size_t c;
+	size_t	i;
+	size_t	c;
 
-    c = 0;
-    i = ft_strlen(str1);
-    while (str2[c] < str2[n])
-    {
-        str1[i] = str2[c];
-        i++;
-        c++;
-    }
-    str1[i] = '\0';
-    return (str1);
+	c = 0;
+	i = ft_strlen(str1);
+	while (str2[c] < str2[n])
+	{
+		str1[i] = str2[c];
+		i++;
+		c++;
+	}
+	str1[i] = '\0';
+	return (str1);
 }
