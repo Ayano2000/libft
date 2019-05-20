@@ -10,5 +10,5 @@ char    *ft_strchr(const char *str, int to_find)
     if (str[i] == '\0')
         return (NULL);
     else
-        return ((char *)&str[i + 1]);
+        return (str[i + 1]);
 }
