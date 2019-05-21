@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/05/21 08:09:34 by ayano             #+#    #+#             */
+/*   Updated: 2019/05/21 08:11:30 by ayano            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int 	ft_atoi(const char *str)
+int		ft_atoi(const char *str)
 {
 	size_t i;
 	size_t nbr;
@@ -9,7 +21,7 @@ int 	ft_atoi(const char *str)
 	i = 0;
 	nbr = 0;
 	neg = 1;
-	while ((str[i] == '\n' || str[i] ==	' ' || str[i] == '\t'))
+	while ((str[i] == '\n' || str[i] == ' ' || str[i] == '\t'))
 		i++;
 	if (str[i] == '-')
 	{
