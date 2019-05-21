@@ -6,7 +6,7 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:45:33 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/21 10:05:25 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/21 13:47:39 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,13 @@ size_t				ft_strlcat(char *dst, const char *src, size_t dstsize);
 char				*strrchr(const char *str, int to_find);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 char				*ft_strcpy(char *dest, const char *src);
+void				ft_putchar(char c);
+void				ft_putstr(char const *str);
+void				ft_putendl(char const *str);
+void				ft_putnbr(int n);
+void				ft_putchar_fd(char c, int fd);
+void				ft_putsrt_fd(char const *str, int fd);
+void				ft_putendl_fd(char const *str, int fd);
+char				*ft_itoa(int n);
 
 #endif

@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 09:27:54 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/21 14:06:44 by ayano            ###   ########.fr       */
+/*   Created: 2019/05/21 11:38:58 by ayano             #+#    #+#             */
+/*   Updated: 2019/05/21 12:10:25 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *str1)
+void	ft_putendl(char const *str)
 {
-	size_t	i;
-	size_t	c;
-	char	*str2;
+	int i;
 
-	c = 0;
-	i = ft_strlen(str1);
-	str2 = (char *)malloc(sizeof(i + 1));
-	while (str1[c] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		str2[c] = str1[c];
-		c++;
+		ft_putchar(str[i]);
+		i++;
 	}
-	str2[c] = '\0';
-	return (str2);
+	str[i] = '\n';
+	ft_putchar(str[i]);
 }
