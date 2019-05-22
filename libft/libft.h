@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <string.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 typedef struct		s_list
 {
@@ -56,7 +57,7 @@ void				ft_putstr(char const *str);
 void				ft_putendl(char const *str);
 void				ft_putnbr(int n);
 void				ft_putchar_fd(char c, int fd);
-void				ft_putsrt_fd(char const *str, int fd);
+void				ft_putstr_fd(char const *str, int fd);
 void				ft_putendl_fd(char const *str, int fd);
 char				*ft_itoa(int n);
 

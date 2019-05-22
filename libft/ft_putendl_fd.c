@@ -19,9 +19,8 @@ void	ft_putendl_fd(char const *str, int fd)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		ft_putchar_fd(str[i]);
+		ft_putchar_fd(str[i], fd);
 		i++;
 	}
-	str[i] = '\n';
-	ft_putchar_fd(str[i]);
+	ft_putchar_fd('\n', fd);
 }

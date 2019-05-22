@@ -14,7 +14,17 @@
 #include <stdio.h>
 #include <string.h>
 
-static int    ft_nblength(int nb)
+static int		ft_isnegative(int negative)
+{
+	if (negative < 0)
+	{
+		negative = -1;
+	}
+	else
+		negative = 1;
+	return (negative);
+}
+static int    	ft_nblength(int nb)
 {
 	size_t 		count;
 	
@@ -34,23 +44,18 @@ char    *ft_itoa(int n)
 	char		*str;
     int			n1;
 	long		len;
-    int			sign;
 	
-	sign = 0;
 	n1 = n;
 	len = ft_nblength(n);
 	if (!(str = (char*)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
 	str[len--] = '\0';
 	if (n == 0)
-	{
 		str[0] = 48;
-		return (str);
-	}
 	if (n < 0)
 	{
-		n *= -1;
-		sign = 1;
+		n = n * 1;
+		ft_isnegative(n);
 	}
 	while (n > 0)
 	{
@@ -58,7 +63,5 @@ char    *ft_itoa(int n)
 		n = n / 10;
 		len--;
 	}
-	if (sign)
-		str[len] = '-';
 	return (str);
 }
