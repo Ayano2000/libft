@@ -17,10 +17,12 @@ char	*ft_strchr(const char *str, int to_find)
 	size_t	i;
 
 	i = 0;
+	if (str == NULL)
+		return (NULL);
 	while (str[i] != to_find && str[i] != '\0')
 		i++;
 	if (str[i] == '\0')
 		return (NULL);
 	else
-		return ((char *)&str[i + 1]);
+		return ((char *)&str[i]);
 }
