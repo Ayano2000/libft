@@ -6,21 +6,21 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:38:22 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/21 09:40:06 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/23 14:24:54 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strrchr(const char *str, int to_find)
+char	*ft_strrchr(const char *str, int to_find)
 {
 	size_t i;
 
 	i = ft_strlen(str);
-	while (str[i] != to_find && 0 != i)
+	while (i > 0 && str[i] != to_find)
 		i--;
-	if (0 == i)
+	if (str[i] != to_find)
 		return (NULL);
 	else
-		return ((char *)&str[i + 1]);
+		return ((char *)&str[i]);
 }

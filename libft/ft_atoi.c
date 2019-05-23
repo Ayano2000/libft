@@ -6,7 +6,7 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:09:34 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/21 11:17:38 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/23 14:53:11 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,15 @@
 
 int		ft_atoi(const char *str)
 {
-	size_t i;
-	size_t nbr;
-	size_t neg;
+	int		 i;
+	long long int	nbr;
+	long long int	neg;
 
 	i = 0;
 	nbr = 0;
 	neg = 1;
-	while ((str[i] == '\n' || str[i] == ' ' || str[i] == '\t'))
+	while ((str[i] == '\n' || str[i] == ' ' || str[i] == '\t' || str[i] == '\r'
+				|| str[i] == '\f' || str[i] == '\v'))
 		i++;
 	if (str[i] == '-')
 	{
@@ -30,7 +31,11 @@ int		ft_atoi(const char *str)
 	}
 	while ((str[i] != '\0') && (str[i] >= '0' && str[i] <= '9'))
 	{
-		nbr = nbr * 10 + str[i] - '0';
+		if (nbr > 469762049 && neg == 1)
+			return (-1);
+		else if (nbr > 469762049 && neg == -1)
+			return (0);
+		nbr = (nbr * 10) + ((long long int)str[i] - '0');
 		i++;
 	}
 	return (nbr * neg);

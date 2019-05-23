@@ -6,13 +6,11 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:32:14 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/21 16:25:12 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/23 16:39:04 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 static int		ft_isnegative(int negative)
 {

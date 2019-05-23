@@ -6,7 +6,7 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:23:59 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/22 18:18:49 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/23 14:17:37 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,9 @@ char	*ft_strchr(const char *str, int to_find)
 	size_t	i;
 
 	i = 0;
-
-	while (str[i] != to_find && str[i] != '\0')
+	while (i < (ft_strlen(str)) && str[i] != to_find)
 		i++;
-	if (str[i] == '\0')
+	if (str[i] != to_find)
 		return (NULL);
 	else
 		return ((char *)&str[i]);
