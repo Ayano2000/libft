@@ -62,5 +62,8 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *str, int fd);
 void				ft_putendl_fd(char const *str, int fd);
 char				*ft_itoa(int n);
+void				*ft_memalloc(size_t size);
+void				ft_memdel(void **to_free);
+char				*ft_strnew(size_t size);
 
 #endif
