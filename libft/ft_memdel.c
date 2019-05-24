@@ -7,6 +7,6 @@ void    ft_memdel(void **to_free)
     else
     {
         free(*to_free);
-        to_free = '\0';
+        *to_free = NULL;
     }
 }

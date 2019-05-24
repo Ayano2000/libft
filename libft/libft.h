@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: ayano <ayano@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:45:33 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/23 16:35:29 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/24 16:26:08 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,15 @@ char				*ft_itoa(int n);
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **to_free);
 char				*ft_strnew(size_t size);
+void				ft_strdel(char **stf);
+void				ft_strclr(char *str);
+void				ft_striter(char *str, void (*f)(char *));
+void				ft_striteri(char *str, void (*f)(unsigned int, char *));
+char				*ft_strmap(char const *str, char (*f)(char));
+char				*ft_strmapi(char const *str, char (*f)(unsigned int, char));
+int					ft_strequ(char const *str1, char const *str2);
+int					ft_strnequ(char const *str1, char const *str2, size_t n);
+char				*ft_strsub(char const *str, unsigned int start, size_t len);
+char				*ft_strjoin(char const *str1, char const *str2);
 
 #endif
