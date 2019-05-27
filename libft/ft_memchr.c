@@ -6,7 +6,7 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:03:38 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/23 16:19:43 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/27 16:24:03 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t		i;
 	const char	*s1;
 
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:34:29 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/23 10:35:02 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/27 16:22:56 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,3 @@ int		ft_strncmp(const char *str1, const char *str2, size_t n)
 		return (*((unsigned char *)str1 + i) - *((unsigned char *)str2 + i));
 	return (0);
 }
-

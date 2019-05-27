@@ -6,7 +6,7 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:27:54 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/23 10:11:05 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/27 16:08:32 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strdup(const char *str1)
 	size_t	i;
 	size_t	c;
 	char	*str2;
-	
+
 	c = 0;
 	i = ft_strlen(str1);
 	str2 = (char *)malloc(i + 1);
