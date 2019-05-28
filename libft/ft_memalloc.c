@@ -6,7 +6,7 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:36:02 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/27 16:37:16 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/28 16:36:39 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,6 @@ void	*ft_memalloc(size_t size)
 	if (mem == NULL)
 		return (NULL);
 	else
-	{
-		while (mem[i] != '\0')
-		{
-			mem[i] = 0;
-			i++;
-		}
-	}
+		ft_memset(mem, '\0', size);
 	return (mem);
 }

@@ -6,7 +6,7 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:11:34 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/27 16:15:17 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/28 16:37:43 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnew(size_t size)
 		return (NULL);
 	else
 	{
-		while (str[i] != '\0')
+		while ((size_t)i <= size)
 		{
 			str[i] = '\0';
 			i++;

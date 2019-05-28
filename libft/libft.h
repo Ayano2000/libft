@@ -6,7 +6,7 @@
 /*   By: ayano <ayano@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:45:33 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/27 12:30:22 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/28 12:58:04 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ void				ft_putchar(char c);
 void				ft_putstr(char const *str);
 void				ft_putendl(char const *str);
 void				ft_putnbr(int n);
+void				ft_putnbr_fd(int n, int fd);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *str, int fd);
 void				ft_putendl_fd(char const *str, int fd);
