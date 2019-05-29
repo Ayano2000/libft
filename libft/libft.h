@@ -6,14 +6,15 @@
 /*   By: ayano <ayano@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:45:33 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/28 12:58:04 by ayano            ###   ########.fr       */
+/*   Updated: 2019/05/29 14:45:56 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # define INTMAX 2147483647
-# define INTMIN -2147483647
+# define INTMIN -2147483648
+# define MININT "-2147483648"
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
@@ -78,5 +79,6 @@ char				*ft_strsub(char const *str, unsigned int start, size_t len);
 char				*ft_strjoin(char const *str1, char const *str2);
 char				*ft_strtrim(char const *str);
 char				**ft_strsplit(char const *str, char c);
+int					ft_intlen(int n);
 
 #endif
