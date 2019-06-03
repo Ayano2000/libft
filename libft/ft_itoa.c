@@ -6,11 +6,15 @@
 /*   By: ayano <ayano@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:32:14 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/29 14:50:26 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/03 16:24:58 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** function to check if int being passed is a negativei.
+*/
 
 static int		ft_isneg(int nb)
 {
@@ -21,6 +25,10 @@ static int		ft_isneg(int nb)
 		x = 1;
 	return (x);
 }
+
+/*
+** function to check if int passed is the min int value.
+*/
 
 static char		*check_min(char *minint)
 {
@@ -36,6 +44,12 @@ static char		*check_min(char *minint)
 	}
 	return (min);
 }
+
+/*
+** check for input being zero, check negative, fill array from back so
+** we dont need to use a string reverse. then adds a negative sign if
+** applicable
+*/
 
 char			*ft_itoa(int n)
 {
