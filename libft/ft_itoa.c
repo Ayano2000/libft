@@ -6,7 +6,7 @@
 /*   By: ayano <ayano@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:32:14 by ayano             #+#    #+#             */
-/*   Updated: 2019/06/03 16:24:58 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/04 08:47:31 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,15 +59,10 @@ char			*ft_itoa(int n)
 
 	neg = ft_isneg(n);
 	len = ft_intlen(n);
-	ret = ft_strnew(len + 1);
+	if (!(ret = ft_strnew(len)))
+		return (NULL);
 	if (n == -2147483648)
 		return (check_min(MININT));
-	if (n == 0)
-	{
-		ret = ft_strnew(1);
-		ret[0] = '0';
-		return (ret);
-	}
 	if (neg == 1)
 		n = n * -1;
 	while (len > 0)
