@@ -6,7 +6,7 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 10:33:52 by ayano             #+#    #+#             */
-/*   Updated: 2019/06/05 12:59:29 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 15:31:23 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 ** Iterates a list lst and applies the function f to each link to
-** create a “fresh” list using malloc, resulting from the successive 
+** create a “fresh” list using malloc, resulting from the successive
 ** applications of f. If the allocation fails, the function
 ** returns NULL.
 */
