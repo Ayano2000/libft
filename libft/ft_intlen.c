@@ -6,11 +6,15 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 09:29:08 by ayano             #+#    #+#             */
-/*   Updated: 2019/06/03 09:30:45 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 12:45:39 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** gives youthe length of the number passed
+*/
 
 int		ft_intlen(int n)
 {

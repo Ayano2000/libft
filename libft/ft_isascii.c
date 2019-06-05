@@ -6,11 +6,15 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:24:01 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/21 08:24:20 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 12:48:29 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** checks if character is an ascii character
+*/
 
 int		ft_isascii(int c)
 {

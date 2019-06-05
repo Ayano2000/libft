@@ -6,11 +6,16 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:07:47 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/27 16:39:54 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 14:16:23 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** compares two byte strings an returns the difference if there is one or 0
+** if there is no difference
+*/
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

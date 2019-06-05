@@ -6,11 +6,15 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:13:09 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/23 10:42:39 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 14:19:20 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** copies n bytes from src to dst
+*/
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

@@ -6,11 +6,15 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:22:06 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/21 08:23:25 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 12:46:52 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** checks if the character passed is a digit or letter
+*/
 
 int	ft_isalnum(int c)
 {

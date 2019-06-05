@@ -6,11 +6,15 @@
 /*   By: ayano <ayano@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:09:34 by ayano             #+#    #+#             */
-/*   Updated: 2019/06/03 16:17:26 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 12:42:27 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** coverts the string pointed to int representation.
+*/
 
 int		ft_atoi(const char *str)
 {

@@ -6,11 +6,15 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:11:42 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/23 13:40:17 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 12:43:43 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** sets n amount of bytes to 0
+*/
 
 void	ft_bzero(void *s, size_t n)
 {

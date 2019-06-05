@@ -6,11 +6,15 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:24:42 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/23 14:26:02 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 12:48:55 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** checks if the character passed is a digit
+*/
 
 int		ft_isdigit(int c)
 {

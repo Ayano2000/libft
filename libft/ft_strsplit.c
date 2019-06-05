@@ -6,11 +6,15 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 08:42:31 by ayano             #+#    #+#             */
-/*   Updated: 2019/06/03 08:53:03 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 15:18:37 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** function to count number of words in the string passed in ft_strsplit
+*/
 
 static int	cwrds(char const *str, char delim, int index)
 {
@@ -29,6 +33,10 @@ static int	cwrds(char const *str, char delim, int index)
 	return (count + cwrds(str, delim, index));
 }
 
+/*
+** function to get the length of the mini strings split by the deliminator
+*/
+
 static int	str_len(char const *str, char delim, int index)
 {
 	int			len;
@@ -43,6 +51,13 @@ static int	str_len(char const *str, char delim, int index)
 	}
 	return (len);
 }
+
+/*
+** splits the string into mini strings and returns them i a 2d array,
+** check if string and deliminator exist, malloc to the size of number of words + 1,
+** while counter less then number of words each place in array is set to be a mini
+** string and then set a null terminator to the end of the 2d array.
+*/
 
 char		**ft_strsplit(char const *str, char c)
 {

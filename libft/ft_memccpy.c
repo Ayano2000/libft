@@ -6,11 +6,16 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:32:03 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/23 10:57:12 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 14:07:37 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** copies memory from src > dst for n bytes or until the character being passed by
+** c is found
+*/
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

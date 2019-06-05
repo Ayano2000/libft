@@ -6,11 +6,15 @@
 /*   By: ayano <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:31:22 by ayano             #+#    #+#             */
-/*   Updated: 2019/05/23 14:26:27 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/05 12:50:26 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** checks if the character passed is a printing character
+*/
 
 int		ft_isprint(int c)
 {
