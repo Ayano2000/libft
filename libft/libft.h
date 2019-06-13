@@ -6,7 +6,7 @@
 /*   By: ayano <ayano@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:45:33 by ayano             #+#    #+#             */
-/*   Updated: 2019/06/05 10:37:52 by ayano            ###   ########.fr       */
+/*   Updated: 2019/06/13 16:03:01 by ayano            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # define INTMAX 2147483647
 # define INTMIN -2147483648
+# define BUFF_SIZE 1
 # define MININT "-2147483648"
 # include <string.h>
 # include <stdlib.h>
@@ -86,5 +87,6 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+int					get_next_line(const int fd, char **line);
 
 #endif
